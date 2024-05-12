@@ -1,2 +1,5 @@
+import sys
+
 for i in range(32323):
-  print('fddfjhkjhkjh')
+    print('fddfjhkjhkjh')
+    sys.stdout.flush() 
