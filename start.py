@@ -102,8 +102,8 @@ def send_welme(message):
         try:
             
             reso = driver.find_element(By.XPATH,'//*[@id="kresult"]/div').text
-            print("ff1")
-            print(reso)
+            bot.reply_to(message, "⌛ DONE NXSAN ...... Row Data")
+            bot.reply_to(message, reso.spilt('\n'))
             
         except:
             reso = driver.find_element(By.XPATH,'//*[@id="kresult"]').text
