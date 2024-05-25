@@ -116,12 +116,7 @@ def send_welme(message):
             
         
             
-    elif len(message.text) == 1:
-        bot.reply_to(message, "😝")
-    elif len(message.text) == 2:
-        bot.reply_to(message, "😝😝")
-    elif len(message.text) < 4 or len(message.text) < 3 or len(message.text) < 2:
-        bot.reply_to(message, "😆😆😆😆😆")
+    
     
     else:
         bot.reply_to(message, "❌الرجاء ارسال رابط الملف الشخصي يجب ان يبدأ  [https://www.tiktok]❌\n\n\n❌ please enter valid link Must start with [https://www.tiktok]❌")
