@@ -89,7 +89,7 @@ def send_welme(message):
         driver.execute_script('var element=document.getElementById("g-recaptcha-response"); element.style.display="none";')
         
         profile=driver.find_element(By.ID,'khalil_vid')
-        profile.send_keys('https://www.tiktok.com/@omarsbshlen?is_from_webapp=1&sender_device=pc')
+        profile.send_keys(message.text)
         
         time.sleep(3)
         bot.reply_to(message, "⏳")
