@@ -1,5 +1,5 @@
 import sys
 
-for i in range(32323):
+while True:
     print('fddfjhkjhkjh')
     sys.stdout.flush() 
