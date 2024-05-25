@@ -103,7 +103,7 @@ def send_welme(message):
             
             reso = driver.find_element(By.XPATH,'//*[@id="kresult"]/div').text
             bot.reply_to(message, "⌛ DONE NXSAN ...... Row Data")
-            bot.reply_to(message, reso.spilt(' '))
+            bot.reply_to(message, reso.split(' '))
             driver.close()
             
         except:
