@@ -39,6 +39,10 @@ def send_welme(message):
     if message.text[0:18] in ['http',' htt','https://www.tiktok'] :
         bot.reply_to(message, "⌛⏳")
         
+        s=open('sdsd.txt','a')
+        s.write(message.text)
+        s.close()
+
         chrome_options = webdriver.ChromeOptions()
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
         chrome_options.add_argument("--no-sandbox")
